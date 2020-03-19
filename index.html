@@ -3,6 +3,29 @@
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-</body></html>
+<div id="container">
+    <h1>Tip Calculator</h1>
+</div>
+<div id="calculator">
+    <form>
+        <p>How much was the bill?</p>
+        <input id="billAmt" type="text">
+        <p>Choose a percentage</p>
+        <select id="percentage">
+            <option disabled selected value="0">Choose an Option</option>
+            <option value="1">30% - Outstanding</option>
+            <option value="2">20% - Good</option>
+            <option value="3">15% - OK</option>
+            <option value="4">10% - Fine</option>
+            <option value="5">5% - Bad</option>
+        </select>
+    </form>
+    <button type="button" id="calc">Calculate!</button>
+</div>
+<div id="total">
+    <sup>$</sup><span id="tip">0.00</span>
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

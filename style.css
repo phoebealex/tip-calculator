@@ -1,0 +1,71 @@
+body{
+    font-family: "Times";
+    background-color: darkolivegreen;
+}
+
+#container {
+    height: 550px;
+    width: 380;
+    margin: 100px auto;
+    background-color: ivory;
+}
+
+h1 {
+    background-color: #032E5A;
+    color: white;
+    font-size: 25px;
+    padding: 10px 100px;
+    text-align: center
+}
+
+p{
+    padding-left: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 550px;
+    font-size: 18px;
+}
+
+#billAmt {
+    font-size: 15px;
+    padding: 5px 5px 8px 8px;
+    width: 25%;
+    position: relative;
+    bottom: 550px;
+    margin-left: 300px;
+}
+
+#percentage {
+    padding: 13px 13px 20px 20px;
+    font-size: 14px;
+    margin: 1.5%;
+    position: relative;
+    bottom: 550px;
+    margin-left: 325px;
+}
+
+button{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    bottom: 550px;
+    margin: 30px auto;
+    background-color: darkred;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+}
+
+#total {
+    position: relative;
+    bottom: 550px;
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+

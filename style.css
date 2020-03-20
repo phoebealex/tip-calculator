@@ -29,10 +29,10 @@ p{
 #billAmt {
     font-size: 15px;
     padding: 5px 5px 8px 8px;
-    width: 25%;
+    width: 10%;
     position: relative;
     bottom: 550px;
-    margin-left: 300px;
+    margin-left: 45%;
 }
 
 #percentage {
@@ -41,7 +41,7 @@ p{
     margin: 1.5%;
     position: relative;
     bottom: 550px;
-    margin-left: 325px;
+    margin-left: 45%;
 }
 
 button{
@@ -69,10 +69,3 @@ button{
     text-transform: uppercase;
 }
 
-#money {
-    position: relative;
-    bottom: 523px;
-    margin-left: 280px;
-    font-weight: bold;
-    font-size: 20px;
-}

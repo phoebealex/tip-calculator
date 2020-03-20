@@ -17,8 +17,8 @@ $(document).ready(() => {
 
      var tip = bill * (percent / 100)
 
-     var total = Math.round(tip);
+     var total = tip.toFixed(3);
      $("#total").css("disply", "block");
-     $("#tip").innerHTML = total;
-     }
+     $("#tip").text(total)
+ }
 

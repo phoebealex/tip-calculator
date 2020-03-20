@@ -58,7 +58,7 @@ button{
     color: white;
 }
 
-#total {
+.total {
     position: relative;
     bottom: 550px;
     font-size: 30px;

@@ -1,24 +1,12 @@
-$(document).ready(() => {
-  $("#calc").click(() => {
-    let bill = $("#billAmt").val();
-    calcTip(bill);
-    let percent = $("#percentage").val();
-    calcTip(percent);
-  });
- }
-
+$(document).ready(function() {
  function calcTip() {
      var bill = $("#billAmt").val();
-     var percent = $("#percentage").val():
+     var percent = $("#percentage").val();
 
-     if (billAmt === "" || serviceQual == 0) {
-         alert("Please enter values");
-         return;
+     var tip = bill * (percent / 100);
 
-     var tip = bill * (percent / 100)
-
-     var total = Math.round(tip);
-     $("#total").css("disply", "block");
-     $("#tip").text(total)
+     var total = tip.toFixed(2);
+     $("#tip").text(total);
  }
-
+     $("#calc").click(calcTip);
+ }

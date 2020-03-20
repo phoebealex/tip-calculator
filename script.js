@@ -1,6 +1,6 @@
  document.getElementById("calc").onclick = function () {
      calcTip();
- })
+ }
 
  function calcTip() {
      var bill = document.getElementById("billAmt").value;

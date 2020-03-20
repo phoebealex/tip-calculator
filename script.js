@@ -9,4 +9,4 @@ $(document).ready(function() {
      $("#tip").text(total);
  }
      $("#calc").click(calcTip);
- }
+ })

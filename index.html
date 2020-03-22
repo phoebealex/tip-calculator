@@ -3,31 +3,47 @@
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div id="container">
-    <h1>Tip Calculator</h1>
-</div>
-<div id="calculator">
-    <form>
-        <p>How much was the bill?</p>
-        <input id="billAmt" type="text">
-        <p>How was the service?</p>
-        <select id="percentage">
-            <option disabled selected value="0">Choose an Option</option>
-            <option value="30">30% - Outstanding</option>
-            <option value="20">20% - Good</option>
-            <option value="15">15% - OK</option>
-            <option value="10">10% - Fine</option>
-            <option value="5">5% - Bad</option>
-        </select>
-    </form>
-    <button type="button" id="calc">Calculate!</button>
-</div>
-<div id="total">
-    <article>Tip Amount</article>
-    <sup>$</sup><span id="tip">0.00</span>
-</div>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+    </div>
+    <div id="calculator">
+        <form>
+            <p>How much was the bill?</p>
+            <input id="billAmt" type="text">
+            <p>How was the service?</p>
+            <select id="percentage">
+                <option disabled selected value="0">Choose an Option</option>
+                <option value="30">30% - Outstanding</option>
+                <option value="20">20% - Good</option>
+                <option value="15">15% - OK</option>
+                <option value="10">10% - Fine</option>
+                <option value="5">5% - Bad</option>
+            </select>
+        </form>
+        <button type="button" id="calc">Calculate!</button>
+    </div>
+    <div id="total">
+        <article>Tip Amount</article>
+        <sup>$</sup><span id="tip">0.00</span>
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+
+<script>
+    $(document).ready(function() {
+      var bill = $("#billAmt").val();
+      var percent = $("#percentage").val();
+
+        $("#calc").click(function() {
+            var tip = bill * (percent / 100);
+            var total = tip.toFixed(2);
+            $("#tip").text(total);
+        });
+      })
+</script>
+
+<script src="script.js"></script>
+
 </html>

@@ -33,13 +33,12 @@
 
 <script>
     $(document).ready(function() {
+    $("#calc").click(function() {
       var bill = $("#billAmt").val();
       var percent = $("#percentage").val();
-
-        $("#calc").click(function() {
-            var tip = bill * (percent / 100);
-            var total = tip.toFixed(2);
-            $("#tip").text(total);
+      var tip = bill * (percent / 100);
+      var total = tip.toFixed(2);
+      $("#tip").text(total);
         });
       })
 </script>
